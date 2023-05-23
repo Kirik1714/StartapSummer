@@ -1,0 +1,175 @@
+.block{
+   width:315px;
+    height: 360px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEBED;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    &_title{
+        display: flex;
+  
+        &_filter{
+            flex: 1;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0px;
+          
+        }
+        &_reset{
+            display: flex;
+          
+         
+        }
+    }
+    .block_title_reset{
+        &_title{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ACADB9;
+        }
+        &_foto{
+            display: block;
+        }
+    }
+
+    &_area{
+        display: flex;
+        margin-top: 32px;
+        flex-direction: column;
+        gap: 8px;
+     
+        &_title{
+    
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            
+        }
+        &_popup{
+            display: flex;
+            align-items: flex-end;
+       
+            width: 275px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #D5D6DC;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+          color: #ACADB9;
+        }
+        .popup_area{
+            position: relative;
+            flex: 1;
+        }
+     
+    }
+    &_range_sallary{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &_title{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+
+        }
+    }
+    &_submit{
+        margin-top: 20px;
+        .button{
+            height: 40px;
+            display: inline-block;
+            width: 100%;
+            background-color: #5E96FC;
+            border-radius: 8px;
+            border: 1px solid #5E96FC;
+            color:#FFFFFF;
+        }
+    }
+
+
+}
+.block_content{
+    position: relative;;
+}
+
+.popup_foto{
+    position: absolute;
+    right: 10px;
+    top:20px;
+
+transition: 0.2s ease-in;
+
+    transform: rotate(360deg);
+
+
+}
+.popup_foto_reverse{
+    position: absolute;
+    right: 10px;
+    top:20px;
+
+    transform: rotate(180deg);
+    transition: 0.2s ease-in;
+}
+input[type="number"] {
+	vertical-align: top;
+	outline: none;
+	height: 40px;
+	line-height: 40px;    
+	text-indent: 10px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	font-size: 14px;
+ 
+	
+} 
+.input{
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D5D6DC;
+    width: 92%;
+}
+
+
+
+
+
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+
+}
+
+.activeCatgory{
+    color: black;
+}
+
+
+@media (max-width:376px) {
+    .block{
+       width:295px;
+        height: 360px;
+        &_area_popup{
+            width: 253px;
+        }
+
+    }
+}

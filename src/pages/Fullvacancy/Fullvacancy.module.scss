@@ -1,0 +1,39 @@
+.block{
+    margin:0px 170px ;
+    margin-bottom: 51px;
+    &_initial{
+       margin-bottom: 20px; 
+    }
+    &_description{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        background: #FFFFFF;
+        border: 1px solid #EAEBED;
+        border-radius: 12px;
+        padding: 24px;
+    }
+  
+    .description_title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0px;
+        margin-bottom: 16px;
+
+    }
+    .subtitle_item{
+        list-style-type: disc;
+        margin-left: 19px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+@media (max-width:1100px) {
+    .block{
+        margin: 0px;
+    }
+}

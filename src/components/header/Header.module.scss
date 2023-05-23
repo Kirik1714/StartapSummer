@@ -1,0 +1,46 @@
+.block{
+    background-color: #FFFFFF;
+  position: absolute;
+  flex: 1;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  padding:  1.5rem 11% 1.5rem; 
+ 
+
+    &_nav{
+        display: flex;
+        align-items: center;
+        
+        &_pages{
+            display: flex; 
+            gap: 60px;
+            margin-left: 280px;
+        }
+    }
+}
+
+.active{
+    color: #5E96FC;
+}
+
+//less 850px
+
+@media (max-width:850px) {
+    .block_nav_pages{
+        display: flex; 
+         gap: 60px;
+        margin-left: 120px;
+    }
+}
+@media (max-width:615px) {
+    .block_nav_logo{
+        flex: 1;
+    }
+    .block_nav_pages{
+        gap: 40px;
+        
+         margin-left: 0px;
+        
+    }
+}

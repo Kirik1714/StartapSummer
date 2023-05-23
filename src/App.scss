@@ -1,0 +1,26 @@
+.wrapper{
+  min-height: 100vh;
+  margin: 2rem 11% 0px;
+  display: flex;
+  flex-direction: column;
+  
+} 
+
+.conteiner{
+  margin-top: 100px;
+  flex: 1;
+}
+@media (max-width:836px) {
+  .wrapper{
+      margin: 2rem 7.9% 0px;
+
+  }
+  
+}
+
+@media(max-width:323px){
+  .wrapper{
+      margin: 1.5rem 4% 0px;
+
+  }
+}

@@ -1,0 +1,10 @@
+.block{
+    margin: 0 150px;
+}
+
+@media(max-width:1000px){
+    .block{
+        margin: 0px 0px;
+    }
+
+}

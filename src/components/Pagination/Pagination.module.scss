@@ -1,0 +1,60 @@
+.main {
+    // display: flex;
+    // gap: 10px;
+
+    // li{
+    //     padding: 7px 12px;
+    //     border: 1px solid #D5D6DC;
+    //     border-radius: 4px;
+    //     cursor: pointer;
+    // }
+    // :global{
+    //     .selected{
+    //         background-color: #5E96FC;
+    //         a{
+    //             color: #FFFFFF;
+    //         }
+    //     }
+
+    // }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        padding-top: 7px;
+        padding-left: 10px;
+        border: 1px solid #D5D6DC;
+        border-radius: 4px;
+        margin-right: 10px;
+        cursor: pointer;
+
+    }
+
+    :global {
+        .selected {
+            a {
+
+                background-color: #5E96FC;
+                color: #FFFFFF;
+
+            }
+
+        }
+
+        .blurArrow {
+            opacity: 0.4;
+            a{
+
+                cursor: default;
+            }
+        }
+
+    }
+}

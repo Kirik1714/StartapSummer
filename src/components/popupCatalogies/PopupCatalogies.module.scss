@@ -1,0 +1,37 @@
+.block{
+    position: absolute;
+    z-index: 1000;
+    background-color: #EAEBED;
+
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    &_item{
+        width: 240px;
+        font-size: 16px;
+        margin: 10px;
+
+
+    }
+    &_item:hover{
+        color: #5E96FC;
+    }
+
+}
+.active{
+    color: #5E96FC; 
+}
+@media (max-width:380px) {
+    .block{
+        &_item{
+            width: 200px;
+        }
+    }
+    
+}
+
+
+
