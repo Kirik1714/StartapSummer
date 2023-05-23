@@ -110,15 +110,18 @@ const Filter = () => {
          
           </div>
           {isOpenPopUp && (
+            <div data-elem="industry-select">
             <PopupCatalogies
               changeChosenLocalCatalog={changeChosenLocalCatalog}
               chosenCatalog={chosenCatalog}
             />
+            </div>
           )}
         </div>
         <div className={style.block_range_sallary}>
           <div className={style.block_range_sallary_title}>Оклад</div>
           <input
+            data-elem="salary-from-input"
             type="number"
             min={0}
             value={localPayFrom}
@@ -129,6 +132,7 @@ const Filter = () => {
             
           />
           <input
+          data-elem="salary-to-input"
             type="number"
             min={0}
             value={localPayTo}
@@ -141,6 +145,7 @@ const Filter = () => {
 
         <div className={style.block_submit}>
           <input
+          data-elem="search-button"
             type="submit"
             value="Подтвердить"
             onClick={changeDataInRedux}

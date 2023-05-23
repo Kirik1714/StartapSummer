@@ -38,7 +38,7 @@ const Vacancy = (props) => {
 
   return (
     <>
-      <div className={style.block}>
+      <div className={style.block} data-elem={`vacancy-${props.id}`}>
         <NavLink
           to={`/fullVacancy/${props.id}`}
           key={props.id}
@@ -72,7 +72,7 @@ const Vacancy = (props) => {
             </div>
           </div>
         </NavLink>
-        <div className={style.block_favoriteIcon_absolut} onClick={changeFavorite}>
+        <div className={style.block_favoriteIcon_absolut} data-elem={`vacancy-${props.id}-shortlist-button`} onClick={changeFavorite}>
           {props.location?
           <img
             src={fullstar }

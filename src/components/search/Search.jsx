@@ -15,11 +15,12 @@ const Search = () => {
   };
 
   return (
-    <div className={style.block}>
+    <div className={style.block} data-elem="search-input">
       <img src={search} alt="" className={style.block_fotoSearch} />
       <div
         onClick={() => dispatch(setSearchValue(localsearch))}
         className={style.block_button}
+        data-elem="search-button"
       >
         Поиск
       </div>
