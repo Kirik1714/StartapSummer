@@ -102,10 +102,12 @@ const Main = () => {
         {status == "loading" ? (
           <Loader />
         ) : (
-          <>
+         <>
+          {  vacancies.length>0?
+            <>
             <div className={style.conteiner_main_vacancy}>
               {vacancies.map((item) => (
-                <Vacancy {...item} key={item.id}  sortArr={sortArr}/>
+                <Vacancy {...item} key={item.id} sortArr={sortArr} />
               ))}
             </div>
             <div className={style.conteiner_main_paginate}>
@@ -115,6 +117,9 @@ const Main = () => {
               />
             </div>
           </>
+      
+        :<img src={foto} alt="logo" />}
+        </>
         )}
       </div>
     </div>
